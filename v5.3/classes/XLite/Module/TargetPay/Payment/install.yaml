@@ -1,0 +1,124 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: 'Targetpay.iDEAL'
+    class: Module\TargetPay\Payment\Processor\iDEAL
+    type: C
+    orderby: -104
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - iDEAL'
+        title: 'TargetPay - iDEAL'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+  - service_name: 'Targetpay.Bancontact'
+    class: Module\TargetPay\Payment\Processor\Bancontact
+    type: C
+    orderby: -103
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Bancontact'
+        title: 'TargetPay - Bancontact'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+
+  - service_name: 'Targetpay.Creditcard'
+    class: Module\TargetPay\Payment\Processor\Creditcard
+    type: C
+    orderby: -102
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Creditcard'
+        title: 'TargetPay - Creditcard'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+
+  - service_name: 'Targetpay.Paysafe'
+    class: Module\TargetPay\Payment\Processor\Paysafe
+    type: C
+    orderby: -101
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Paysafe'
+        title: 'TargetPay - Paysafe'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+
+  - service_name: 'Targetpay.Sofort'
+    class: Module\TargetPay\Payment\Processor\Sofort
+    type: C
+    orderby: -100
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Sofort'
+        title: 'TargetPay - Sofort'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+
+  - service_name: 'Targetpay.Paypal'
+    class: Module\TargetPay\Payment\Processor\Paypal
+    type: C
+    orderby: -100
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Paypal'
+        title: 'TargetPay - Paypal'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+
+  - service_name: 'Targetpay.Bankwire'
+    class: Module\TargetPay\Payment\Processor\Bankwire
+    type: C
+    orderby: -100
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Bankwire'
+        title: 'TargetPay - Bankwire'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live
+
+  - service_name: 'Targetpay.Afterpay'
+    class: Module\TargetPay\Payment\Processor\Afterpay
+    type: C
+    orderby: -100
+    enabled: 1
+    translations:
+      - code: en
+        name: 'TargetPay - Afterpay'
+        title: 'TargetPay - Afterpay'
+    settings:
+      - name: rtlo
+      - name: mode
+        value: live

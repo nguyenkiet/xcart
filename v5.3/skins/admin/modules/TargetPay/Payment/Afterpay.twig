@@ -1,0 +1,21 @@
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td class="setting-name">
+    <label for="settings_login">{{ t('RTLO') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_rtlo" name="settings[rtlo]" value="{{ this.paymentMethod.getSetting('rtlo') }}" class="validate[required,maxSize[255]]" />
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+    <label for="settings_mode">{{ t('Processing mode') }}</label>
+    </td>
+    <td>
+    <select id="settings_mode" name="settings[mode]">
+      <option value="test" {% if this.isSelected(this.paymentMethod.getSetting('mode'), 'test') %} selected="selected" {% endif %}>Test mode</option>
+      <option value="live" {% if this.isSelected(this.paymentMethod.getSetting('mode'), 'live') %} selected="selected" {% endif %}>Live mode</option>
+    </select>
+    </td>
+  </tr>
+</table>
